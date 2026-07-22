@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean id="Litu" class="EmployeeData.employee">
+<!--       <property name="name" value="Mrutyunjaya"/>-->
+<!--       <property name="address" value="Odisha"/>-->
+       <constructor-arg value="Mrutyunjaya Sahoo"/>
+       <constructor-arg value="Odisha"/>
+
+   </bean>
+    <!-- more bean definitions go here -->
+
+</beans>
