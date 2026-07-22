@@ -3,12 +3,12 @@ package com.emp.demo;
 public class Student {
     String name;
     String address;
-    public Student(String name, String address)
-    {
-        this.name=name;
-        this.address=address;
-    }
-    public void setName(String name) {
+//    public Student(String name, String address)
+//    {
+//        this.name=name;
+//        this.address=address;
+//    }
+    public void setname(String name) {
         this.name = name;
     }
 
@@ -20,7 +20,7 @@ public class Student {
         this.address = address;
     }
 
-    public String getAddress() {
+    public String getaddress() {
         return address;
     }
 
