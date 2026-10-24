@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--    <bean id="course" class="Model.Course">-->
+<!--        <property name="name" value="Java"/>-->
+<!--        <property name="roll" value="101"/>-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash; Student Bean &ndash;&gt;-->
+<!--    <bean id="student" class="Model.Student">-->
+<!--        <property name="name" value="Mrutyunjaya"/>-->
+<!--        <property name="age" value="22"/>-->
+
+<!--        &lt;!&ndash; Inject Course object into Student &ndash;&gt;-->
+<!--        <property name="course" ref="course"/>-->
+<!--    </bean>-->
+    <bean id="course" class="Model.Course">
+        <constructor-arg index="0" value="Java"/>
+        <constructor-arg index="1" value="227"/>
+
+    </bean>
+    <bean id="Student" class="Model.Student">
+        <constructor-arg  index="0" value="Mrutyunjaya Sahoo"/>
+        <constructor-arg index="1" value="22"/>
+        <constructor-arg  ref="course"/>
+    </bean>
+
+</beans>
